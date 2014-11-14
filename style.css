@@ -1,0 +1,17 @@
+*{margin:0;}
+img{max-width: 100%;}
+.bannerjs-load img , .bannerjs-item img{ display: block; margin: 0 auto; }
+.bannerjs-item img{ width:100%; }
+.show , .test{ width:500px; margin:50px auto; border:15px solid #aaa; position: relative; /*display: none; */overflow: hidden; border-radius: 15px; display: none; }
+.bannerjs-list{ position: relative; overflow: hidden; }
+.bannerjs-list .bannerjs-item{ float:left; }
+.bannerjs-list .bannerjs-item img{ display: block; margin:0 auto; }
+
+.bannerjs-disk{ display: block; margin:0 auto; position: absolute; bottom:0px; left:50%; padding: 0 10px; background: #aaa; border-top-left-radius: 7px; border-top-right-radius: 7px; }
+.bannerjs-disk span{ display: inline-block; width:2px; height: 2px; margin-right: 4px; cursor: pointer; background: #fefefe; border:3px #333 solid; border-radius: 4px; }
+.bannerjs-disk span.active{ border:3px #fff solid; background: #333; }
+.goprev , .gonext{ display: none; width:50px; height: 50px; top:50%; margin-top: -25px; position: absolute; cursor:pointer; background: #333; color:#fefefe; border-radius: 25px; opacity: .8;filter: alpha(opacity=80); line-height: 50px; text-align: center; box-shadow: 1px 1px 1px #ccc, -1px -1px 1px #ccc; font-size: 24px; }
+.goprev{ left: 5px; }
+.gonext{ right: 5px; }
+.goprev:hover , .gonext:hover{ background: #cecece; color:#333; }
+.clearfix{ clear: both; }
