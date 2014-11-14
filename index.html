@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Banner.js</title>
+	<!-- css -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<!-- test -2 -->
+	<div class="test"></div>
+	<!-- test -1 -->
+	<div class="show"></div>
+
+	<!-- script -->
+	<!--jquery script -->
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- jquer.mousewheel -->
+    	<script type="text/javascript" src="./jquery.mousewheel.min.js"></script>
+    	<!-- banner.js -->
+    	<script type="text/javascript" src="./banner.js"></script>
+    	<script type="text/javascript">
+    		//test -1
+    		$('.show').bannerjs({
+    			//加载框架时是否显示加载图片
+    			loading : true,
+    			//是否开启滚轮事件
+    			bannerWheel : 	true,
+    			//是否开启焦点切换事件
+    			bannerDisk : true,
+    			//是否开启自动轮播
+    			bannerauto : true,
+    			//设置自动轮播时间
+    			autoTime : 7000,
+    			//单个图片间的补白
+    			bannerPadding: 2,
+    			//一次展示多少个图片
+    			bannerShow : 1,
+    			//是否开启左右按钮
+    			bannerArrow : false,
+    			//加载框架时显示的图片
+    			loadingImg: "http://static.acfun.mm111.net/dotnet/20130418/umeditor/dialogs/emotion/images/ac/34.gif",
+    			//图片地址---以数组格式  ["图片地址1..","图片地址2"]
+    			bannerImg: [
+                                        "http://upload.shunwang.com/2014/1114/1415944020112.jpg",
+                                        "http://www.dm123.cn/ecms/d/file/2014-11-14/c10d5834055311ea1a8bb137f5665b16.jpg",
+                                        "http://ww4.sinaimg.cn/mw690/bb9a4a1fjw1em8kqc2qs6j20jg11i10l.jpg",
+                                        "http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14092230ngkf.jpg",
+                                        "http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14093959pnju.jpg"
+                                    ]
+    		});
+
+    		//test -2
+    		$('.test').bannerjs({
+    			bannerauto : false,
+    			bannerArrow : false,
+    			bannerShow : 2,
+    			loadingImg: "http://static.acfun.mm111.net/dotnet/20130418/umeditor/dialogs/emotion/images/ac/34.gif",
+    			bannerImg: ["http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14170845ud72.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14093959pnju.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14092230ngkf.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/13175611uaue.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/13113230qvut.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14170845ud72.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14093959pnju.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/14092230ngkf.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/13175611uaue.jpg","http://static.acfun.mm111.net/dotnet/artemis/u/cms/www/201411/13113230qvut.jpg"]
+    		});
+    	</script>
+</body>
+</html>
